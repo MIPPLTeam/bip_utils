@@ -106,7 +106,7 @@ class CoinsConf:
     )
 
     # Configuration for Biblepay main net
-    DashMainNet: CoinConf = CoinConf(
+    Biblepay: CoinConf = CoinConf(
         coin_name=CoinNames("Biblepay", "BBP"),
         params={
             "p2pkh_net_ver": b"\x19",
@@ -661,7 +661,7 @@ class CoinsConf:
     )
 
     # Configuration for Wagerr main net
-    DashMainNet: CoinConf = CoinConf(
+    Wagerr: CoinConf = CoinConf(
         coin_name=CoinNames("Wagerr", "WGR"),
         params={
             "p2pkh_net_ver": b"\x49",
