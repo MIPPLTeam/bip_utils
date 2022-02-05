@@ -11,10 +11,6 @@ from bip_utils.utils import mnemonic
 
 def __main__():
 
-    #mnemonic = "excuse page hundred clock bonus gold chase album sketch talk axis ankle"
-    mnemonic = "hábil mundo famoso tregua peligro llenar sanidad punto diva nave minero marea"
-    send_to = "WijC9GZZ9LqqJXrzeDzCvPYuwVVX5ZiXYU"
-
     #mnemonic = input("Enter 12-word mnemonic: ")
     #send_to = input("Enter address to send to: ")
     
@@ -84,7 +80,7 @@ def derive_addresses( bip32_ctx, change = 0):
             print ("No transactions found for this address, round finished...")
             tx_found = False
         i += 1
-        
+
     return (total, addresses)
 
 if __name__ == "__main__":
