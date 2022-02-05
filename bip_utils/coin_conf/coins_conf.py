@@ -105,6 +105,16 @@ class CoinsConf:
         },
     )
 
+    # Configuration for Biblepay main net
+    DashMainNet: CoinConf = CoinConf(
+        coin_name=CoinNames("Biblepay", "BBP"),
+        params={
+            "p2pkh_net_ver": b"\x19",
+            "p2sh_net_ver": b"\x10",
+            "wif_net_ver": b"\xb6",
+        },
+    )
+
     # Configuration for Binance Smart Chain
     BinanceSmartChain: CoinConf = CoinConf(
         coin_name=CoinNames("Binance Smart Chain", "BNB"),
@@ -647,6 +657,16 @@ class CoinsConf:
         params={
             "p2pkh_net_ver": b"\x1e",
             "wif_net_ver": b"\x9e",
+        },
+    )
+
+    # Configuration for Wagerr main net
+    DashMainNet: CoinConf = CoinConf(
+        coin_name=CoinNames("Wagerr", "WGR"),
+        params={
+            "p2pkh_net_ver": b"\x49",
+            "p2sh_net_ver": b"\x3F",
+            "wif_net_ver": b"\xc7",
         },
     )
 

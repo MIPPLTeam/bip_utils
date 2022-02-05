@@ -60,38 +60,38 @@ from bip_utils.bip.conf.bip44 import Bip44Coins, Bip44Conf, Bip44ConfGetter
 from bip_utils.bip.conf.bip49 import Bip49Coins, Bip49Conf, Bip49ConfGetter
 from bip_utils.bip.conf.bip84 import Bip84Coins, Bip84Conf, Bip84ConfGetter
 # Monero
-from bip_utils.monero import (
-    MoneroKeyError, MoneroPublicKey, MoneroPrivateKey, MoneroSubaddress, Monero
-)
+#from bip_utils.monero import (
+#    MoneroKeyError, MoneroPublicKey, MoneroPrivateKey, MoneroSubaddress, Monero
+#)
 # Monero mnemonic
-from bip_utils.monero.mnemonic import (
-    MoneroChecksumError,
-    MoneroEntropyBitLen, MoneroLanguages, MoneroWordsNum,
-    MoneroMnemonic, MoneroMnemonicDecoder, MoneroMnemonicEncoder,
-    MoneroEntropyGenerator, MoneroMnemonicGenerator, MoneroMnemonicValidator, MoneroSeedGenerator
-)
+#from bip_utils.monero.mnemonic import (
+#    MoneroChecksumError,
+#    MoneroEntropyBitLen, MoneroLanguages, MoneroWordsNum,
+#    MoneroMnemonic, MoneroMnemonicDecoder, MoneroMnemonicEncoder,
+#    MoneroEntropyGenerator, MoneroMnemonicGenerator, MoneroMnemonicValidator, MoneroSeedGenerator
+#)
 # Monero configuration
-from bip_utils.monero.conf import MoneroCoins, MoneroConf
+#from bip_utils.monero.conf import MoneroCoins, MoneroConf
 # Substrate
-from bip_utils.substrate import (
-    SubstrateKeyError, SubstratePathError,
-    SubstratePublicKey, SubstratePrivateKey,
-    SubstratePathElem, SubstratePath, SubstratePathParser,
-    Substrate
-)
+#from bip_utils.substrate import (
+#    SubstrateKeyError, SubstratePathError,
+#    SubstratePublicKey, SubstratePrivateKey,
+#    SubstratePathElem, SubstratePath, SubstratePathParser,
+#    Substrate
+#)
 # Substrate mnemonic
-from bip_utils.substrate.mnemonic import SubstrateBip39SeedGenerator
+#from bip_utils.substrate.mnemonic import SubstrateBip39SeedGenerator
 # Substrate configuration
-from bip_utils.substrate.conf import SubstrateCoins, SubstrateConf
+#from bip_utils.substrate.conf import SubstrateCoins, SubstrateConf
 # ECC
 from bip_utils.ecc import (
     EllipticCurveGetter, EllipticCurveTypes,
-    Ed25519, Ed25519Point, Ed25519PublicKey, Ed25519PrivateKey,
-    Ed25519Blake2b, Ed25519Blake2bPublicKey, Ed25519Blake2bPrivateKey,
-    Ed25519Monero, Ed25519MoneroPoint, Ed25519MoneroPublicKey, Ed25519MoneroPrivateKey,
-    Nist256p1, Nist256p1Point, Nist256p1PublicKey, Nist256p1PrivateKey,
+ #   Ed25519, Ed25519Point, Ed25519PublicKey, Ed25519PrivateKey,
+ #   Ed25519Blake2b, Ed25519Blake2bPublicKey, Ed25519Blake2bPrivateKey,
+ #   Ed25519Monero, Ed25519MoneroPoint, Ed25519MoneroPublicKey, Ed25519MoneroPrivateKey,
+ #   Nist256p1, Nist256p1Point, Nist256p1PublicKey, Nist256p1PrivateKey,
     Secp256k1, Secp256k1Point, Secp256k1PublicKey, Secp256k1PrivateKey,
-    Sr25519, Sr25519Point, Sr25519PublicKey, Sr25519PrivateKey
+ #   Sr25519, Sr25519Point, Sr25519PublicKey, Sr25519PrivateKey
 )
 # Utils
 from bip_utils.utils.misc import (
