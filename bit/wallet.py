@@ -485,7 +485,6 @@ class PrivateKey(BaseKey):
                     'All APIs are unreachable. Please provide the unspent '
                     'inputs as unspents directly to sign this transaction.'
                 )
-
             tx_data = deserialize(tx_data)
             return sign_tx(self, tx_data, unspents=unspents)
 

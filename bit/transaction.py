@@ -438,7 +438,7 @@ def sanitize_tx_data(
         for unspent in unspents:
             unspent.opt_in_for_RBF()
 
-    if remaining > 0:
+    if remaining > 10000:       # avoid dust
         outputs.append((leftover, remaining))
 
     # Sanity check: If spending from main-/testnet, then all output addresses must also be for main-/testnet.
@@ -477,7 +477,7 @@ def construct_outputs(outputs):
         # P2PKH/P2SH/Bech32
         if amount:
             script_pubkey = address_to_scriptpubkey(dest)
-
+            amount = int(amount)
             amount = amount.to_bytes(8, byteorder='little')
 
         # Blockchain storage
